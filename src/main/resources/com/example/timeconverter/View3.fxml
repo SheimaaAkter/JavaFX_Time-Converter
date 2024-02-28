@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane fx:id="sPane" dividerPositions="0.45" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.timeconverter.Controller3">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <Label layoutX="9.0" layoutY="38.0" text="Select Country">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Button layoutX="197.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickONHome" text="Home">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <ComboBox fx:id="sltCountry" layoutX="46.0" layoutY="151.0" prefHeight="25.0" prefWidth="177.0" promptText="Select Country" />
+            <Button fx:id="cnvBtn" layoutX="98.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickCnvBtn" text="Convert">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <Label layoutX="107.0" layoutY="38.0" text="Time">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="extBtnP3" layoutX="12.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickONExitP3" text="Exit">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="sysTime" alignment="CENTER" editable="false" layoutX="132.0" layoutY="115.0" prefHeight="25.0" prefWidth="177.0" promptText="From Time" />
+            <TextField fx:id="timeDiff" alignment="CENTER" editable="false" layoutX="86.0" layoutY="251.0" promptText="Time Difference" />
+            <Label layoutX="30.0" layoutY="117.0" text="System Time :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="177.0" text="Country Time :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="224.0" text="Time Difference From System">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="reBtn" layoutX="121.0" layoutY="296.0" mnemonicParsing="false" onAction="#clickCnvBtn" text="Refresh">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="cnvTime" alignment="CENTER" editable="false" layoutX="132.0" layoutY="175.0" prefHeight="25.0" prefWidth="177.0" promptText="To Time" />
+            </children></AnchorPane>
+    </items>
+</SplitPane>
